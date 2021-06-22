@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container w-auto text-center">
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" alt="logo" />
+        </a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 class="text-center my-5">Práctica técnica Bloque Javascript</h1>
+
+      <div class="row pb-4">
+        <div class="col-12 col-lg px-0 pad">
+          <!-- d-flex flex-column flex-lg-row justify-content-between -->
+          <table class="table table-hover bg-light rounded shadow">
+            <thead>
+              <th>Nombre</th>
+              <th>Género</th>
+              <th>Origen</th>
+              <th>Avatar</th>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <div
+          class="col-12 col-lg px-0 h-25 card text-center bg-light rounded shadow"
+        >
+          <h5 class="card-header">Detalles del personaje</h5>
+          <div class="card-body">
+            <img
+              id="avatar"
+              alt="card-avatar"
+              class="d-none rounded shadow mb-2"
+              width="128"
+              height="128"
+            />
+            <h5 class="card-title"></h5>
+            <p id="info" index="-1">
+              Selecciona un personaje de la lista o haz clic en Siguiente
+            </p>
+            <button id="prev" class="btn btn-secondary me-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+                />
+              </svg>
+              Anterior
+            </button>
+            <button id="next" class="btn btn-primary">
+              Siguiente
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="p-3 bg-light rounded shadow d-none">
+          <button id="prev" class="btn btn-secondary me-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-arrow-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+              />
+            </svg>
+            Anterior
+          </button>
+          <button id="next" class="btn btn-primary">
+            Siguiente
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-arrow-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

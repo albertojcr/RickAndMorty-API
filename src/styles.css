@@ -1,0 +1,20 @@
+@media (min-width: 992px) {
+  .pad {
+    padding-right: 1rem !important;
+  }
+}
+
+body {
+  background: rgb(118, 253, 45);
+  background: linear-gradient(
+    0deg,
+    rgba(118, 253, 45, 1) 0%,
+    rgba(34, 193, 195, 1) 100%
+  );
+  background-repeat: no-repeat;
+}
+
+nav img {
+  width: 50%;
+  height: auto;
+}
